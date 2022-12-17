@@ -1,4 +1,5 @@
 import CartIcon from '../Cart/CartIcon';
+import CartContext from '../../store/CartContext';
 
 import classes from './HeaderCartButton.module.css';
 
