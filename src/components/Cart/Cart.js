@@ -7,7 +7,7 @@ import classes from './Cart.module.css';
 
 const Cart = (props) => {
   const cartCntx = useContext(CartContext);
-  const totalAmount = `$ ${cartCntx.totalAmount}`;
+  const totalAmount = `$${Math.max(cartCntx.totalAmount, 0).toFixed(2)}`;
   const hasItems = cartCntx.items.length > 0;
 
   const cartItemRemoveHandler = (id) => {
